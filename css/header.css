@@ -1,0 +1,11 @@
+.top-header{
+    background-color: #523737;
+    color: white;
+}
+
+.top-header .header__top, 
+.top-header .header__bottom{
+    display: flex;
+    justify-content: space-between;
+
+}
