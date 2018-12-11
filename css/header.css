@@ -6,6 +6,7 @@
     /* 항상 넓이를 정해줘야한다 */
     width: 100%;
     top: 0px;
+    z-index: 2;
 }
 
 
@@ -26,6 +27,10 @@
 .top-header .header__bottom{
     margin : 0 10px;
    
+}
+
+.top-header .header__bottom .header__column:first-child{
+    color : rgba(255, 255, 255, 0.5);
 }
 
 .top-header .header__column{
