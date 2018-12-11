@@ -11,16 +11,16 @@
 <body>
     <header class="top-header">
         <div class="header__top">
-            <div class="header_column">
+            <div class="header__column">
                 <!-- plane icon -->
                 <i class="fas fa-fighter-jet"></i>
                 <!-- wifi icon -->
                 <i class="fas fa-wifi"></i>
             </div>
-            <div class="header_column">
+            <div class="header__column">
                 <span class="header_time">18:30</span>
             </div>
-            <div class="header_column">
+            <div class="header__column">
                 <!-- monn icon -->
                 <!-- blue icon -->
                 <i class="fas fa-moon"></i>
@@ -29,28 +29,34 @@
                     <i class="fas fa-battery-full"></i> 
                 </span>
             </div>
-            <div class="header__bottom">
-                <div class="header_column">
+        </div> 
+
+
+        <div class="header__bottom">
+                <div class="header__column">
                     <span class="header_text">Manage</span>
                 </div>
-                <div class="header_column">
-                    <sapn class="header_text">Friends <span class="header_text">1</span></sapn>
+                <div class="header__column">
+                    <sapn class="header_text">Friends 
+                        <span class="header_number">1</span>
+                    </sapn>
                 </div>
-                <div class="header_column">
+                <div class="header__column">
                     <i class="fas fa-cog"></i>
                     <span class="friends_profile-name">Hoin</span>
                 </div>
-            </div>
-        </div>   
+        </div>
+         
 
     </header>
     
         <main class="freinds">
-            <div class="serach-bar">
+            <div class="search-bar">
                 <i class="fa fa-search"></i>
-                <input type="text" name="" id="" placeholder="Find freinds, chats, Plus">
+                <input type="text" placeholder="Find freinds, chats, Plus" >
             </div>
             
+
             <section class="freinds_section">
                 <header class="friends_section_header">
                     <h6 class="friends_section_title">My Profile</h6>
@@ -92,21 +98,25 @@
         </main>
         
         <nav class="tab-bar">
-            <a href="index.html" class="tab-bar_tab">
-                <i class="fa fa-user">   <span class="tab bar_title--seleted">Friends</span></i>
-             
-            </a>
-            <a href="chats.html" class="tab-bar_tab">
-                <i class="fa fa-commnet"><span class="tab bar_title">Chats</span></i>
-            </a>
-            <a href="find.html" class="tab-bar_tab">
-                <i class="fa fa-search"><span class="tab bar_title">Find</span></i>
-            </a>
-            <a href="more.html" class="tab-bar_tab">
-                <i class="fa fa-ellipsis-h"><span class="tab bar_ttile">More</span></i>
-            </a>
-
-        </nav>
+                <a href="index.html" class="tab-bar__tab tab-bar__tab--seleted">
+                    <i class="fa fa-user"> </i>
+                    <span class="tab-bar__title">Friends</span>
+                 
+                </a>
+                <a href="chats.html" class="tab-bar__tab">
+                    <i class="fa fa-comment"></i>
+                    <span class="tab-bar__title">Chats</span>
+                </a>
+                <a href="find.html" class="tab-bar__tab">
+                    <i class="fa fa-search"></i>
+                    <span class="tab-bar__title">Find</span>
+                </a>
+                <a href="more.html" class="tab-bar__tab">
+                    <i class="fa fa-ellipsis-h"></i>
+                    <span class="tab-bar__title">More</span>
+                </a>
+    
+            </nav>
 
 </body>
 </html>
