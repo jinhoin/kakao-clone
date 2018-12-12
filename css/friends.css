@@ -20,8 +20,16 @@
     /* 상하 높이가 같아진다 */
     border-radius: 50%; 
     margin-right: 15px;
+    animation: 1s rotateFriend ease-in-out;
+}
 
-    
+@keyframes rotateFriend{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg)
+    }
 }
 .friends__section-row.with-tagline{
     justify-content: space-between;
