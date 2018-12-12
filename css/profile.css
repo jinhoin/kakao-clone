@@ -5,8 +5,11 @@
 
 
 .profile .profile__header{
-    height: 80vh; 
+    height: 70vh; 
     background-color: red;
+    background: URL('https://i.pinimg.com/564x/c9/3a/c1/c93ac1282e1d08ea7cff0aa865ca4688.jpg');
+    background-position: center left;
+    background-size: 100%;
     width: 100%;
     position: relative;
     top : -70px;
@@ -17,10 +20,68 @@
     display: flex;
     
     /* justify-content: center; */
-    justify-content: center;
+    justify-content: flex-end;
 
     /* 아하 */
     /* align-items: center; */
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    flex-direction:     column;
+    /* 부모요소인 flex container 안에 어떻게 배치할건지 체크하는거임 */
+    align-items: center;
     
+}
+
+/* .profile__header-container .profile__header-title{
+    text-align: cetner;
+    이렇게 하면 정렬기준이없기때문에 안되는거같다
+} */
+
+.profile__header .profile__header-container{
+    text-align: center;
+    position: relative;
+    /* relative는 상-하-좌-우 움직일 수 있게 해준다 */
+    bottom : -60px;
+}
+
+.profile__header-container img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    /* realtive -40주웠던게 다시 위로 올라간다  */
+}
+
+.profile .profile__container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__container input{
+    padding : 5px;
+    margin-bottom: 20px;
+}
+.profile__actions{
+    display: flex;
+}
+
+.profile__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.profile__action-circle{
+    background: #f2f2f2;
+    padding : 15px;
+    border-radius: 50%;
+    color: #523737;
+    margin-bottom: 15px;
+}
+
+.profile__action-title{
+    font-size: 12px;
+    font-weight: 600;
 }

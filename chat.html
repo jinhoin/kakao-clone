@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Chats</title>
 </head>
-<body>
-    <header class="top-header">
+<body class="body-chat">
+    <header class="top-header chat-header">
         <div class="header__top">
             <div class="header_column">
                 <!-- plane icon -->
@@ -29,15 +29,7 @@
                     <i class="fas fa-battery-full"></i> 
                 </span>
             </div>
-            <div class="header__button">
-                <div class="header_column">
-                    <span class="header_text">LY</span>
-                </div>
-                <div class="header_column">
-                    <sapn class="header_text">Chats <i class="fas fa-caret-down"></i></sapn>
-                </div>
-               
-            </div>
+           
         </div>    
 
         <div class="header__bottom">
@@ -60,26 +52,28 @@
         <div class="date-divider">
             <span class="date-divider__text">Wedneday, August 2, 2017</span>
         </div>
-        <div class="chat__message chate">
+        <div class="chat__message chat__message-from-me">
             <span class="chat__message-time">17:55</span>
             <span class="chat__message-body">
                 Hello! This is a test messgae.
             </span>
         </div>
-        <div class="chat__message chat__message--to-me">
+        <div class="chat__message chat__message-to-me">
             <img class="chat__message-avatar" src="images/kakao.png"></img>
-           <div class="chat__message_center">Lynn</div> 
-                <span class="chat__message-body">
+           <div class="chat__message_center">
+               <h3 class="chat__message_username">Lynn</h3>
+                 <span class="chat__message-body">
                     And this an answer
                 </span>
-                <span class="chat__message-time">17:55</span>
-            </div>
+                </div>
+                <span class="chat__message-time">19:55</span>
+        </div>
     </main>
     <div class="type-message">
-        <i class="fas fa-plus fa-2x"></i>
+        <i class="fas fa-plus fa-lg"></i>
         <div class="type-message__input">
             <input type="text" name="" id="">
-            <i class="fa fa-simle"></i>
+            <i class="fa fa-smile fa-lg"></i>
             <span class="recode-message">
                 <i class="fa fa-microphone"></i>
             </span>
